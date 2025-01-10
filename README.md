@@ -10,6 +10,12 @@ Abra um terminal Linux e verifique que o Singularity está instalado:
 singularity --version
 ```
 
+Vá para a pasta onde deseja instalar o container:
+
+```bash
+cd path/to/container/
+```
+
 Baixe o arquivo de definição do container que contém a linguagem Python e as bibliotecas de inteligência artificial:
 
 ```bash
