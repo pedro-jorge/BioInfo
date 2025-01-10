@@ -4,7 +4,7 @@
 
 ## Criando um container
 
-Abra um terminal Linux e verifique que o Singularity está instalado:
+Abra um terminal Linux e verifique se o Singularity está instalado:
 
 ```bash
 singularity --version
@@ -16,7 +16,7 @@ Vá para a pasta onde deseja instalar o container:
 cd path/to/container/
 ```
 
-Baixe o arquivo de definição do container que contém a linguagem Python e as bibliotecas de inteligência artificial:
+Baixe o arquivo de definição do container, que contém as instruções de instalação da linguagem Python e das bibliotecas de inteligência artificial:
 
 ```bash
 wget https://raw.githubusercontent.com/pedro-jorge/BioInfo/main/container.def
@@ -36,7 +36,7 @@ singularity shell ubuntu24_04
 
 Isso deverá fazer com que o container seja iniciado, com a linha de comando iniciando com "Singularity >".
 
-Verifique que o Python está corretamente instalado:
+Dentro do container, verifique se o Python está corretamente instalado:
 
 ```bash
 python
@@ -44,10 +44,10 @@ python
 
 Isso deverá fazer com que o Python seja iniciando, mostrando "Python 3.12.7 | package Anaconda, Inc. |"
 
-Ainda dentro do Python, verifique se a biblioteca Pytorch está corretamente instalada:
+Dentro do Python, verifique se a biblioteca Pytorch está corretamente instalada:
 
 ```bash
 import torch 
 ```
 
-Se havendo neenhuma mensagem de erro, o container está pronto para uso.
+Não havendo nenhuma mensagem de erro, o container está pronto para uso.
