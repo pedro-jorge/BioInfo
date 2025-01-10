@@ -4,7 +4,7 @@
 
 ## Criando um container Ubuntu 24
 
-Instruções para a criação de um container do sistema operacional Ubuntu 24.04 em conjunto com a linguagem de programação Python e bibliotecas de computação científica e inteligência artificial.
+Instruções para a criação de um container do sistema operacional Ubuntu 24.04 em conjunto com a linguagem de programação Python e as bibliotecas de computação científica e de inteligência artificial.
 
 Abra um terminal Linux e verifique se o Singularity está instalado:
 
