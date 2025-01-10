@@ -1,6 +1,6 @@
 Bootstrap: docker
 From: ubuntu:24.04
-Stage: build
+stage: build
 
 %post 
     apt update -y
