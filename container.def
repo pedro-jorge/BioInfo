@@ -5,6 +5,17 @@ stage: build
 %post 
     apt update -y
     apt install -y curl
+    apt install -y git
+
+    # instala o anaconda (todos os pacotes básicos de IA)
     curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
     bash Anaconda3-2024.10-1-Linux-x86_64.sh -bfp /usr/local
-    conda install -y pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
+    
+    # instala o pytorch 
+    conda install -y pytorch torchvision pytorch-cuda=12.4 -c pytorch -c nvidia
+    
+    # instala as bibliotecas de IA não nativas no anaconda
+    pip install fair-esm transformers sentencepiece biopython xlrd openpyxl ipython
+
+    # clona o repositório do artigo "Machine Learning prediction of enzyme optimum pH"
+    git clone https://github.com/jafetgado/EpHod.git
