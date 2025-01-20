@@ -134,7 +134,7 @@ Nota: provavelmente algumas modificações devem ser feitas no código. Aparente
 
 Ainda por terminar.
 
-Vá para o diretório onde deseja instalar: 
+<!-- Vá para o diretório onde deseja instalar: 
 
 ```bash 
 cd path/to/AI
@@ -183,7 +183,7 @@ curl -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_exp_strucs_gnom
 
 ```bash 
 curl -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_alphafold_UP000005640_9606_HUMAN_v2_vaex_dataframe.zip
-```
+``` -->
 
 
 
