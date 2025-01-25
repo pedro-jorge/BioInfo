@@ -44,28 +44,34 @@ Isso criará uma pasta chamada *ubuntu24_04*.
 Entre no container para prosseguir com as próximas instalações:
 
 ```bash
-sudo singularity shell --writable ubuntu24_04
+sudo singularity shell --writable --no-home ubuntu24_04
 ```
 
 
-## Instalação do Anaconda, Java e R:
+## Instalação do Anaconda, Java, R e git:
 
-Uma vez dentro do container, instale o *curl* (necessário para baixar arquivos):
+Uma vez dentro do container, instale o *wget* (necessário para baixar arquivos):
 
 ```bash
-apt update && apt install curl
+apt update && apt install wget
+```
+
+Vá para a home do container:
+
+```bash
+cd /home/ubuntu
 ```
 
 Baixe o script de instalação do Anaconda:
 
 ```bash
-curl -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+wget -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 ```
 
 Instale o Anaconda:
 
 ```bash
-bash Anaconda3-2024.10-1-Linux-x86_64.sh -bfp /usr/local
+bash Anaconda3-2024.10-1-Linux-x86_64.sh
 ```
 
 Instale o Java:
@@ -80,13 +86,19 @@ Instale o R:
 apt install r-base-dev
 ```
 
+Instale o git:
+
+```bash
+apt install git 
+```
+
 
 ## Instalação da IA #1: Deep learning prediction of enzyme optimum pH ✅
 
-Vá para o diretório onde deseja instalar: 
+Vá para a home:
 
 ```bash 
-cd path/to/AI
+cd /home/ubuntu
 ```
 
 Clone o repositório e vá para dentro dele:
@@ -98,7 +110,7 @@ git clone https://github.com/jafetgado/EpHod.git && cd EpHod
 Baixe o YAML que contém as dependências a serem instaladas:
 
 ```bash
-curl -O https://raw.githubusercontent.com/pedro-jorge/BioInfo/main/EpHod.yml
+wget -O https://raw.githubusercontent.com/pedro-jorge/BioInfo/main/EpHod.yml
 ```
 
 Crie o ambiente da IA no Anaconda:
@@ -116,10 +128,10 @@ source activate && conda activate ephod
 
 ## Instalação da IA #2: A sequence embedding method for enzyme optimal condition analysis ✅
 
-Vá para o diretório onde deseja instalar: 
+Vá para a home:
 
 ```bash 
-cd path/to/AI
+cd /home/ubuntu
 ```
 
 Essa IA está escrita em Java. Basta apenas clonar o repositório:
@@ -134,7 +146,7 @@ Nota: provavelmente algumas modificações devem ser feitas no código. Aparente
 
 Ainda por terminar.
 
-<!-- Vá para o diretório onde deseja instalar: 
+<!-- Vá para a home:
 
 ```bash 
 cd path/to/AI
@@ -178,21 +190,21 @@ cd ../../../data/test/Human/
 ```
 
 ```bash 
-curl -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_exp_strucs_gnomad_clinvar.csv
+wget -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_exp_strucs_gnomad_clinvar.csv
 ```
 
 ```bash 
-curl -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_alphafold_UP000005640_9606_HUMAN_v2_vaex_dataframe.zip
+wget -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_alphafold_UP000005640_9606_HUMAN_v2_vaex_dataframe.zip
 ``` -->
 
 
 
 ## Instalação da IA #4: EnZymClass: Substrate specificity prediction tool of plant acyl-ACP thioesterases based on ensemble learning ✅
 
-Vá para o diretório onde deseja instalar: 
+Vá para a home:
 
 ```bash 
-cd path/to/AI
+cd /home/ubuntu
 ```
 
 Crie o ambiente da IA no Anaconda:
@@ -222,22 +234,22 @@ git clone https://github.com/deeprob/EnZymClass.git && cd EnZymClass
 Baixe o dataset de treino utilizado pelos autores:
 
 ```bash 
-curl -O https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_trainset.csv
+wget -O https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_trainset.csv
 ```
 
 Baixe o dataset de teste utilizado pelos autores:
 
 ```bash
-curl -O https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_testset.csv
+wget -O https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_testset.csv
 ```
 
 
 ## Instalação da IA #5: Machine learning-based prediction of activity and substrate specificity for OleA enzymes in the thiolase superfamily ✅
 
-Vá para o diretório onde deseja instalar: 
+Vá para a home:
 
 ```bash 
-cd path/to/AI
+cd /home/ubuntu
 ```
 
 Clone o repositório:
