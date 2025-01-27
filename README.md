@@ -59,13 +59,13 @@ apt update && apt install wget
 Baixe o script de instalação do Miniconda:
 
 ```bash
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 ```
 
 Instale o Miniconda:
 
 ```bash
-bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -bfp /usr/local
 ```
 
 Caso, após a instalação, o _apt_ pare de funcionar, digite:
