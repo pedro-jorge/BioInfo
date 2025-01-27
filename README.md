@@ -48,7 +48,7 @@ sudo singularity shell --writable --no-home ubuntu24_04
 ```
 
 
-## Instalação do Anaconda, Java, R e git:
+## Instalação do Miniconda, Java, R e git:
 
 Uma vez dentro do container, instale o *wget* (necessário para baixar arquivos):
 
@@ -56,16 +56,16 @@ Uma vez dentro do container, instale o *wget* (necessário para baixar arquivos)
 apt update && apt install wget
 ```
 
-Baixe o script de instalação do Anaconda:
+Baixe o script de instalação do Miniconda:
 
 ```bash
-wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
 ```
 
-Instale o Anaconda:
+Instale o Miniconda:
 
 ```bash
-bash Anaconda3-2024.10-1-Linux-x86_64.sh -bfp /usr/local
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
 Caso, após a instalação, o _apt_ pare de funcionar, digite:
