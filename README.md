@@ -68,16 +68,16 @@ Instale o Miniconda:
 bash Miniconda3-latest-Linux-x86_64.sh -bfp /usr/local
 ```
 
-Caso, após a instalação, o _apt_ pare de funcionar, digite:
-
-```bash 
-conda install -c conda-forge libstdcxx 
-```
-
 Instale o Java (siga as instruções do instalador):
 
 ```bash
 apt install default-jre
+```
+
+Caso, após a instalação, o _apt_ pare de funcionar, digite:
+
+```bash 
+conda install -c conda-forge libstdcxx 
 ```
 
 Instale o R:
