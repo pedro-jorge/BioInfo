@@ -56,25 +56,25 @@ Uma vez dentro do container, instale o *wget* (necessário para baixar arquivos)
 apt update && apt install wget
 ```
 
-Vá para a home do container:
-
-```bash
-cd /home/ubuntu
-```
-
 Baixe o script de instalação do Anaconda:
 
 ```bash
-wget -O https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 ```
 
 Instale o Anaconda:
 
 ```bash
-bash Anaconda3-2024.10-1-Linux-x86_64.sh
+bash Anaconda3-2024.10-1-Linux-x86_64.sh -bfp /usr/local
 ```
 
-Instale o Java:
+Caso, após a instalação, o _apt_ pare de funcionar, digite:
+
+```bash 
+conda install -c conda-forge libstdcxx 
+```
+
+Instale o Java (siga as instruções do instalador):
 
 ```bash
 apt install default-jre
@@ -110,13 +110,13 @@ git clone https://github.com/jafetgado/EpHod.git && cd EpHod
 Baixe o YAML que contém as dependências a serem instaladas:
 
 ```bash
-wget -O https://raw.githubusercontent.com/pedro-jorge/BioInfo/main/EpHod.yml
+wget https://raw.githubusercontent.com/pedro-jorge/BioInfo/main/EpHod.yml
 ```
 
 Crie o ambiente da IA no Anaconda:
 
 ```bash
-conda env create -n ephod -f ./EpHod.yml -p ./env
+conda env create -n ephod -f ./EpHod.yml
 ```
 
 Para ativar esse ambiente:
@@ -190,11 +190,11 @@ cd ../../../data/test/Human/
 ```
 
 ```bash 
-wget -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_exp_strucs_gnomad_clinvar.csv
+wget https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_exp_strucs_gnomad_clinvar.csv
 ```
 
 ```bash 
-wget -O https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_alphafold_UP000005640_9606_HUMAN_v2_vaex_dataframe.zip
+wget https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_alphafold_UP000005640_9606_HUMAN_v2_vaex_dataframe.zip
 ``` -->
 
 
@@ -234,13 +234,13 @@ git clone https://github.com/deeprob/EnZymClass.git && cd EnZymClass
 Baixe o dataset de treino utilizado pelos autores:
 
 ```bash 
-wget -O https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_trainset.csv
+wget https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_trainset.csv
 ```
 
 Baixe o dataset de teste utilizado pelos autores:
 
 ```bash
-wget -O https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_testset.csv
+wget https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/raw/TE_testset.csv
 ```
 
 
@@ -253,14 +253,27 @@ cd /home/ubuntu
 ```
 
 Clone o repositório:
+
 ```bash 
 git clone https://github.com/serina-robinson/thiolase-machine-learning.git
+```
+
+Desative o ambiente do Anaconda:
+
+```bash 
+conda deactivate 
 ```
 
 Inicialize o R:
 
 ```bash
 R 
+```
+
+Instale o pacman:
+
+```bash 
+install.packages("pacman")
 ```
 
 Instale as bibliotecas necessárias:
