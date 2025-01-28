@@ -93,7 +93,7 @@ apt install git
 ```
 
 
-## Instalação da IA #1: Deep learning prediction of enzyme optimum pH ✅
+## Instalação da IA #1: [Deep learning prediction of enzyme optimum pH](https://github.com/beckham-lab/EpHod) ✅
 
 Vá para a home:
 
@@ -126,7 +126,7 @@ source activate && conda activate ephod
 ```
 
 
-## Instalação da IA #2: A sequence embedding method for enzyme optimal condition analysis ✅
+## Instalação da IA #2: [A sequence embedding method for enzyme optimal condition analysis](https://github.com/bj600800/EOCA) ✅
 
 Vá para a home:
 
@@ -142,7 +142,7 @@ git clone https://github.com/bj600800/EOCA.git
 
 Nota: provavelmente algumas modificações devem ser feitas no código. Aparentemente, os diretórios usados para leitura e escrita de arquivos estão escritos de acordo com o PC utilizado pelos autores.
 
-## Instalação da IA #3: Rapid protein stability prediction using deep learning representations ❌
+## Instalação da IA #3: [Rapid protein stability prediction using deep learning representations](https://github.com/KULL-Centre/_2022_ML-ddG-Blaabjerg/?tab=readme-ov-file) ❌
 
 Ainda por terminar.
 
@@ -199,7 +199,7 @@ wget https://sid.erda.dk/share_redirect/fFPJWflLeE/rasp_preds_alphafold_UP000005
 
 
 
-## Instalação da IA #4: EnZymClass: Substrate specificity prediction tool of plant acyl-ACP thioesterases based on ensemble learning ✅
+## Instalação da IA #4: [EnZymClass: Substrate specificity prediction tool of plant acyl-ACP thioesterases based on ensemble learning](https://github.com/deeprob/EnZymClass) ✅
 
 Vá para a home:
 
@@ -244,7 +244,7 @@ wget https://github.com/deeprob/ThioesteraseEnzymeSpecificity/blob/master/data/r
 ```
 
 
-## Instalação da IA #5: Machine learning-based prediction of activity and substrate specificity for OleA enzymes in the thiolase superfamily ✅
+## Instalação da IA #5: [Machine learning-based prediction of activity and substrate specificity for OleA enzymes in the thiolase superfamily](https://github.com/serina-robinson/thiolase-machine-learning/?tab=readme-ov-file) ✅
 
 Vá para a home:
 
